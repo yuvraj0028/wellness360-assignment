@@ -49,6 +49,7 @@ public class AuthService implements UserDetailsService {
         try {
             String response = authDAO.signUp(userDTO);
             responseData = TaskUtil.responseJson(response, null);
+            log.info("user created {}", response);
             responseEntity = TaskUtil.handleException(responseData, HttpStatus.OK);
         } catch (RuntimeException e){
             log.error("Error creating user", e);
@@ -75,6 +76,7 @@ public class AuthService implements UserDetailsService {
         try {
             String response = authDAO.login(userDTO);
             responseData = TaskUtil.responseJson(response, null);
+            log.info("user logged in {}", response);
             responseEntity = TaskUtil.handleException(responseData, HttpStatus.OK);
         } catch (RuntimeException e){
             log.error("Error logging in user", e);
