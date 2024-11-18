@@ -33,7 +33,7 @@ Before running the application, ensure that the following are installed:
 
 ## Running the Spring Boot Application
 
-Once Java, Gradle, and MongoDB are installed, follow these steps:
+Once Java, Gradle, and Postman are installed, open your terminal follow these steps:
 
 1. Clone the repository:
 
@@ -50,18 +50,18 @@ cd wellness360-assignment
 3. Build the application:
 
 ```bash
-./gradlew build
+gradlew build
 ```
 
 5. Run tests (optional but recommended):
 ```bash
-./gradlew test
+gradlew test
 ```
 
 4. Run the application:
 
 ```bash
-./gradlew bootRun
+gradlew bootRun
 ```
 
 ## Application Port
