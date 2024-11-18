@@ -53,12 +53,12 @@ cd wellness360-assignment
 gradlew build
 ```
 
-5. Run tests (optional but recommended):
+4. Run tests (optional but recommended):
 ```bash
 gradlew test
 ```
 
-4. Run the application:
+5. Run the application:
 
 ```bash
 gradlew bootRun
