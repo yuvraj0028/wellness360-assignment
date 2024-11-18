@@ -50,7 +50,7 @@ public class TaskServiceImpl implements TaskService{
             Task task = taskDAO.getTaskById(id);
             log.info("fetched task {}", task);
             responseData = TaskUtil.responseJson(task, null);
-            responseEntity = TaskUtil.handleException(responseData, HttpStatus.FOUND);
+            responseEntity = TaskUtil.handleException(responseData, HttpStatus.OK);
         } catch (RuntimeException e){
             log.error("Error fetching task", e);
             responseData = TaskUtil.responseJson(null, e.getMessage());
