@@ -38,7 +38,7 @@ Once Java, Gradle, and MongoDB are installed, follow these steps:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yuvraj0028/wellness360-assignment
+git clone https://github.com/yuvraj0028/wellness360-assignment.git
 ```
 
 2. Change your directory:
