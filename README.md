@@ -135,7 +135,7 @@ Request Body:
 Delete a task by its **ID**.
 
 6. **Mark Task as Completed**:
-**PUT** `http://localhost:9094/api/v1/tasks/{id}/complete`
+**PATCH** `http://localhost:9094/api/v1/tasks/{id}/complete`
 Mark a task as completed. **ID** is required.
 
 ## Exception Handling
