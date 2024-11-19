@@ -80,7 +80,7 @@ public class TaskController {
      * @param id the unique identifier of the task whose status is to be updated.
      * @return a {@link ResponseEntity} containing a confirmation of the task status update.
      */
-    @PutMapping(value="/{id}/complete",produces = "application/json",name = "updateTaskStatus")
+    @PatchMapping(value="/{id}/complete",produces = "application/json",name = "updateTaskStatus")
     ResponseEntity<Map<String, Object>> updateTaskStatus(@PathVariable(required = true, name = "id") String id) {
         return taskService.updateTaskStatus(id);
     }
